@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ja" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>みんなのつぶやき</title>
+    <style>
+        body { font-family: sans-serif; max-width: 800px; margin: auto; padding: 1em; background-color: #f8f9fa; }
+        h1, h2 { color: #333; }
+        a { color: #007bff; text-decoration: none; }
+        form { background-color: #fff; padding: 1em; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); margin-bottom: 1em; }
+        input[type="text"], select { border: 1px solid #ccc; border-radius: 4px; padding: 0.5em; margin-right: 0.5em; }
+        input[type="submit"] { background-color: #007bff; color: white; border: none; padding: 0.5em 1em; border-radius: 4px; cursor: pointer; }
+        input[type="submit"]:hover { background-color: #0056b3; }
+        ul { list-style-type: none; padding: 0; }
+        li { background-color: #fff; border: 1px solid #ddd; padding: 1em; margin-bottom: 1em; border-radius: 8px; }
+    </style>
+</head>
+<body>
+    <h1>つぶやきWebアプリ</h1>
+    <img th:src="@{/tsubuyaki.png}">
+    <p>「こころ」のうちのよしなしごと，ペチャクチャつぶやいてすっきりしませんか？</p>
+    <a th:href="@{/read}">はじめる</a>
+</body>
+</html>
